@@ -1,0 +1,58 @@
+/*
+ * vec3.h
+ *
+ *  Created on: 25 de mai de 2017
+ *      Author: davi
+ */
+
+#ifndef VEC3_H_
+#define VEC3_H_
+
+
+
+
+
+#endif /* VEC3_H_ */
+
+/*Construtores
+– Padrão e recebendo x, y e z
+• Métodos, operadores e atributos
+*/
+
+class Vec3{
+private:
+	double x; //Componente X
+	double y; //Componente Y
+	double z; //Componente Z
+public:
+	//Construtores
+	Vec3::Vec3(); //Construtor Padrao. Cria um vetor forward.
+	Vec3::Vec3(double x, double y, double z); //Cria um vetor dado x, y e z.
+	Vec3::Vec3(const Vec3& v); //Copy constructor
+
+	//Metodos
+	Vec3 Vec3::add(Vec3 v); //soma de vetores
+	Vec3 Vec3::dot(Vec3 v); //produto escalar
+	Vec3 Vec3::cross(Vec3 v); //produto vetorial
+	Vec3 Vec3::mult(double s); //multiplicacao de um vetor por um escalar
+	Vec3 Vec3::div(double s); //divisao de um vetor por um escalar
+	double Vec3::magnitude(); //Magnitude do vetor
+	Vec3 Vec3::normalized();  //Retorna o vetor normalizado
+};
+
+
+
+/*
+Adição, subtração, multiplicação e divisão
+Magnitude, distância e normalização
+Produto e divisão por escalar
+Produtos escalar e vetorial
+Projeção de um vetor sobre outro
+Ângulos entre vetores
+Quais constantes de classe você poderia adicionar?
+*/
+/*
+• Desafio
+– Forneça facilidades para I/O
+– Implemente vetores 2D e 4D
+*/

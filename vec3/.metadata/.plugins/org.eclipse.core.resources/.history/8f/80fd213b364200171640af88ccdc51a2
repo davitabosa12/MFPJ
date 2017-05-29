@@ -1,0 +1,27 @@
+/*
+ * main.cpp
+
+ *
+ *  Created on: 25 de mai de 2017
+ *      Author: davi
+ */
+#include<iostream>
+#include<cstdio>
+#include<cmath>
+#include"vec3.h"
+using namespace std;
+
+Vec3 v1,v2,result;
+
+int main(){
+
+	v1 = Vec3(54,2,1);
+	v2 = Vec3(33,21,22);
+	result = v1.cross(v2);
+	cout << result.getX() << " " << result.getY() << " " << result.getZ();
+	return 0;
+
+}
+
+
+

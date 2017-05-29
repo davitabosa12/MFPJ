@@ -1,0 +1,427 @@
+13:52:41 **** Incremental Build of configuration Debug for project Classe Vec3 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Classe Vec3
+Invoking: GCC C++ Linker
+g++  -o "Classe Vec3"  ./main.o ./vec3.o   
+Finished building target: Classe Vec3
+ 
+13:52:59 **** Incremental Build of configuration Release for project Classe Vec3 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Classe Vec3
+Invoking: GCC C++ Linker
+g++  -o "Classe Vec3"  ./main.o ./vec3.o   
+Finished building target: Classe Vec3
+ 
+14:10:41 **** Incremental Build of configuration Release for project Classe Vec3 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building file: ../vec3.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"vec3.d" -MT"vec3.o" -o "vec3.o" "../vec3.cpp"
+Finished building: ../vec3.cpp
+ 
+Building target: Classe Vec3
+Invoking: GCC C++ Linker
+g++  -o "Classe Vec3"  ./main.o ./vec3.o   
+Finished building target: Classe Vec3
+ 
+14:12:29 **** Incremental Build of configuration Release for project Classe Vec3 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Classe Vec3
+Invoking: GCC C++ Linker
+g++  -o "Classe Vec3"  ./main.o ./vec3.o   
+Finished building target: Classe Vec3
+ 
+14:42:24 **** Incremental Build of configuration Release for project Classe Vec3 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:11:0:
+../vec3.h:51:31: error: ‘Vec3 Vec3::operator+(Vec3, Vec3)’ must take either zero or one argument
+  Vec3 operator+(Vec3 a, Vec3 b);
+                               ^
+../vec3.h:52:31: error: ‘Vec3 Vec3::operator-(Vec3, Vec3)’ must take either zero or one argument
+  Vec3 operator-(Vec3 a, Vec3 b);
+                               ^
+../vec3.h:54:33: error: ‘Vec3 Vec3::operator*(Vec3, double)’ must take either zero or one argument
+  Vec3 operator*(Vec3 a, double s);
+                                 ^
+../vec3.h:55:33: error: ‘Vec3 Vec3::operator*(double, Vec3)’ must take either zero or one argument
+  Vec3 operator*(double s, Vec3 a);
+                                 ^
+../vec3.h:56:33: error: ‘Vec3 Vec3::operator/(Vec3, double)’ must take exactly one argument
+  Vec3 operator/(Vec3 a, double s);
+                                 ^
+../vec3.h:57:33: error: ‘Vec3 Vec3::operator/(double, Vec3)’ must take exactly one argument
+  Vec3 operator/(double s, Vec3 a);
+                                 ^
+../vec3.h:58:32: error: ‘bool Vec3::operator==(Vec3, Vec3)’ must take exactly one argument
+  bool operator==(Vec3 a, Vec3 b);
+                                ^
+make: *** [main.o] Error 1
+subdir.mk:21: recipe for target 'main.o' failed
+14:54:12 **** Incremental Build of configuration Release for project Classe Vec3 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building file: ../vec3.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"vec3.d" -MT"vec3.o" -o "vec3.o" "../vec3.cpp"
+Finished building: ../vec3.cpp
+ 
+Building target: Classe Vec3
+Invoking: GCC C++ Linker
+g++  -o "Classe Vec3"  ./main.o ./vec3.o   
+./main.o: na função `main':
+main.cpp:(.text.startup+0xd): referência indefinida para `Vec3::VEC3_ZERO'
+main.cpp:(.text.startup+0x1b): referência indefinida para `Vec3::VEC3_ZERO'
+main.cpp:(.text.startup+0x29): referência indefinida para `Vec3::VEC3_ZERO'
+collect2: error: ld returned 1 exit status
+make: *** [Classe Vec3] Error 1
+makefile:44: recipe for target 'Classe Vec3' failed
+14:55:26 **** Incremental Build of configuration Release for project Classe Vec3 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:11:0:
+../vec3.h:26:42: error: invalid use of incomplete type ‘class Vec3’
+  static const Vec3 VEC3_ZERO = Vec3(0,0,0); //Vetor zero
+                                          ^
+../vec3.h:19:7: note: definition of ‘class Vec3’ is not complete until the closing brace
+ class Vec3 {
+       ^
+../vec3.h:26:42: error: invalid in-class initialization of static data member of non-integral type ‘const Vec3’
+  static const Vec3 VEC3_ZERO = Vec3(0,0,0); //Vetor zero
+                                          ^
+../vec3.h:26:42: error: ‘const Vec3 Vec3::VEC3_ZERO’ has incomplete type
+subdir.mk:21: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+14:55:48 **** Incremental Build of configuration Release for project Classe Vec3 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building file: ../vec3.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"vec3.d" -MT"vec3.o" -o "vec3.o" "../vec3.cpp"
+Finished building: ../vec3.cpp
+ 
+Building target: Classe Vec3
+Invoking: GCC C++ Linker
+g++  -o "Classe Vec3"  ./main.o ./vec3.o   
+./main.o: na função `main':
+main.cpp:(.text.startup+0xd): referência indefinida para `Vec3::VEC3_ZERO'
+main.cpp:(.text.startup+0x1b): referência indefinida para `Vec3::VEC3_ZERO'
+main.cpp:(.text.startup+0x29): referência indefinida para `Vec3::VEC3_ZERO'
+collect2: error: ld returned 1 exit status
+make: *** [Classe Vec3] Error 1
+makefile:44: recipe for target 'Classe Vec3' failed
+14:58:10 **** Incremental Build of configuration Release for project Classe Vec3 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building file: ../vec3.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"vec3.d" -MT"vec3.o" -o "vec3.o" "../vec3.cpp"
+Finished building: ../vec3.cpp
+ 
+Building target: Classe Vec3
+Invoking: GCC C++ Linker
+g++  -o "Classe Vec3"  ./main.o ./vec3.o   
+./main.o: na função `main':
+main.cpp:(.text.startup+0xd): referência indefinida para `Vec3::VEC3_ZERO'
+main.cpp:(.text.startup+0x1b): referência indefinida para `Vec3::VEC3_ZERO'
+main.cpp:(.text.startup+0x29): referência indefinida para `Vec3::VEC3_ZERO'
+collect2: error: ld returned 1 exit status
+makefile:44: recipe for target 'Classe Vec3' failed
+make: *** [Classe Vec3] Error 1
+15:00:19 **** Incremental Build of configuration Release for project Classe Vec3 ****
+make all 
+Building file: ../vec3.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"vec3.d" -MT"vec3.o" -o "vec3.o" "../vec3.cpp"
+Finished building: ../vec3.cpp
+ 
+Building target: Classe Vec3
+Invoking: GCC C++ Linker
+g++  -o "Classe Vec3"  ./main.o ./vec3.o   
+./main.o: na função `main':
+main.cpp:(.text.startup+0xd): referência indefinida para `Vec3::VEC3_ZERO'
+main.cpp:(.text.startup+0x1b): referência indefinida para `Vec3::VEC3_ZERO'
+main.cpp:(.text.startup+0x29): referência indefinida para `Vec3::VEC3_ZERO'
+collect2: error: ld returned 1 exit status
+make: *** [Classe Vec3] Error 1
+makefile:44: recipe for target 'Classe Vec3' failed
+15:02:17 **** Incremental Build of configuration Release for project Classe Vec3 ****
+make all 
+Building file: ../vec3.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"vec3.d" -MT"vec3.o" -o "vec3.o" "../vec3.cpp"
+../vec3.cpp: In constructor ‘Vec3::Vec3(double, double, double)’:
+../vec3.cpp:23:7: warning: variable ‘VEC3_ZERO’ set but not used [-Wunused-but-set-variable]
+  Vec3 VEC3_ZERO = Vec3(0,0,0); //Vetor zero
+       ^
+../vec3.cpp:24:21: warning: variable ‘VEC3_ONES’ set but not used [-Wunused-but-set-variable]
+   static const Vec3 VEC3_ONES = Vec3(1,1,1); //Vetor de "um"s
+                     ^
+../vec3.cpp:25:21: warning: variable ‘VEC3_FORWARD’ set but not used [-Wunused-but-set-variable]
+   static const Vec3 VEC3_FORWARD = Vec3(0,0,1);
+                     ^
+../vec3.cpp:26:21: warning: variable ‘VEC3_BACKWARD’ set but not used [-Wunused-but-set-variable]
+   static const Vec3 VEC3_BACKWARD = Vec3(0,0,-1);
+                     ^
+../vec3.cpp:27:21: warning: variable ‘VEC3_UPWARD’ set but not used [-Wunused-but-set-variable]
+   static const Vec3 VEC3_UPWARD = Vec3(0,1,0);
+                     ^
+../vec3.cpp:28:21: warning: variable ‘VEC3_DOWNWARD’ set but not used [-Wunused-but-set-variable]
+   static const Vec3 VEC3_DOWNWARD = Vec3(0,-1,0);
+                     ^
+../vec3.cpp:29:21: warning: variable ‘VEC3_LEFT’ set but not used [-Wunused-but-set-variable]
+   static const Vec3 VEC3_LEFT = Vec3(-1,0,0);
+                     ^
+../vec3.cpp:30:21: warning: variable ‘VEC3_RIGHT’ set but not used [-Wunused-but-set-variable]
+   static const Vec3 VEC3_RIGHT = Vec3(1,0,0);
+                     ^
+Finished building: ../vec3.cpp
+ 
+Building target: Classe Vec3
+Invoking: GCC C++ Linker
+g++  -o "Classe Vec3"  ./main.o ./vec3.o   
+./main.o: na função `main':
+main.cpp:(.text.startup+0xd): referência indefinida para `Vec3::VEC3_ZERO'
+main.cpp:(.text.startup+0x1b): referência indefinida para `Vec3::VEC3_ZERO'
+main.cpp:(.text.startup+0x29): referência indefinida para `Vec3::VEC3_ZERO'
+collect2: error: ld returned 1 exit status
+makefile:44: recipe for target 'Classe Vec3' failed
+make: *** [Classe Vec3] Error 1
+15:08:53 **** Incremental Build of configuration Release for project Classe Vec3 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building file: ../vec3.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"vec3.d" -MT"vec3.o" -o "vec3.o" "../vec3.cpp"
+Finished building: ../vec3.cpp
+ 
+Building target: Classe Vec3
+Invoking: GCC C++ Linker
+g++  -o "Classe Vec3"  ./main.o ./vec3.o   
+./main.o: na função `main':
+main.cpp:(.text.startup+0xd): referência indefinida para `Vec3::VEC3_ZERO'
+main.cpp:(.text.startup+0x1b): referência indefinida para `Vec3::VEC3_ZERO'
+main.cpp:(.text.startup+0x29): referência indefinida para `Vec3::VEC3_ZERO'
+collect2: error: ld returned 1 exit status
+make: *** [Classe Vec3] Error 1
+makefile:44: recipe for target 'Classe Vec3' failed
+15:09:36 **** Incremental Build of configuration Release for project Classe Vec3 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:18:11: error: expected primary-expression before ‘.’ token
+  v1 = Vec3.VEC3_ZERO;
+           ^
+make: *** [main.o] Error 1
+subdir.mk:21: recipe for target 'main.o' failed
+15:10:51 **** Incremental Build of configuration Release for project Classe Vec3 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Classe Vec3
+Invoking: GCC C++ Linker
+g++  -o "Classe Vec3"  ./main.o ./vec3.o   
+./main.o: na função `main':
+main.cpp:(.text.startup+0x2): referência indefinida para `Vec3::VEC3_ZERO'
+makefile:44: recipe for target 'Classe Vec3' failed
+collect2: error: ld returned 1 exit status
+make: *** [Classe Vec3] Error 1
+15:12:21 **** Incremental Build of configuration Release for project Classe Vec3 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building file: ../vec3.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"vec3.d" -MT"vec3.o" -o "vec3.o" "../vec3.cpp"
+../vec3.cpp:144:22: error: ‘void operator=(Vec3)’ must be a nonstatic member function
+ void operator=(Vec3 a){
+                      ^
+subdir.mk:21: recipe for target 'vec3.o' failed
+make: *** [vec3.o] Error 1
+15:16:53 **** Incremental Build of configuration Release for project Classe Vec3 ****
+make all 
+Building file: ../vec3.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"vec3.d" -MT"vec3.o" -o "vec3.o" "../vec3.cpp"
+Finished building: ../vec3.cpp
+ 
+Building target: Classe Vec3
+Invoking: GCC C++ Linker
+g++  -o "Classe Vec3"  ./main.o ./vec3.o   
+./main.o: na função `main':
+main.cpp:(.text.startup+0x2): referência indefinida para `Vec3::VEC3_ZERO'
+collect2: error: ld returned 1 exit status
+makefile:44: recipe for target 'Classe Vec3' failed
+make: *** [Classe Vec3] Error 1
+15:17:20 **** Incremental Build of configuration Release for project Classe Vec3 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:18:7: error: ‘VEC3_ZERO’ was not declared in this scope
+  v1 = VEC3_ZERO;
+       ^
+subdir.mk:21: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+15:18:10 **** Incremental Build of configuration Release for project Classe Vec3 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Classe Vec3
+Invoking: GCC C++ Linker
+g++  -o "Classe Vec3"  ./main.o ./vec3.o   
+./main.o: na função `main':
+main.cpp:(.text.startup+0x2): referência indefinida para `Vec3::VEC3_ZERO'
+collect2: error: ld returned 1 exit status
+make: *** [Classe Vec3] Error 1
+makefile:44: recipe for target 'Classe Vec3' failed
+15:19:06 **** Incremental Build of configuration Release for project Classe Vec3 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:11:0:
+../vec3.h:13:24: error: expected identifier before numeric constant
+ #define VEC3_ZERO Vec3(0,0,0)
+                        ^
+../vec3.h:27:20: note: in expansion of macro ‘VEC3_ZERO’
+  static const Vec3 VEC3_ZERO; //Vetor zero
+                    ^
+../vec3.h:13:24: error: expected ‘,’ or ‘...’ before numeric constant
+ #define VEC3_ZERO Vec3(0,0,0)
+                        ^
+../vec3.h:27:20: note: in expansion of macro ‘VEC3_ZERO’
+  static const Vec3 VEC3_ZERO; //Vetor zero
+                    ^
+../vec3.h:13:29: error: return type specification for constructor invalid
+ #define VEC3_ZERO Vec3(0,0,0)
+                             ^
+../vec3.h:27:20: note: in expansion of macro ‘VEC3_ZERO’
+  static const Vec3 VEC3_ZERO; //Vetor zero
+                    ^
+../vec3.h:13:29: error: constructor cannot be static member function
+ #define VEC3_ZERO Vec3(0,0,0)
+                             ^
+../vec3.h:27:20: note: in expansion of macro ‘VEC3_ZERO’
+  static const Vec3 VEC3_ZERO; //Vetor zero
+                    ^
+../main.cpp: In function ‘int main()’:
+../vec3.h:13:29: error: cannot call constructor ‘Vec3::Vec3’ directly [-fpermissive]
+ #define VEC3_ZERO Vec3(0,0,0)
+                             ^
+../main.cpp:18:13: note: in expansion of macro ‘VEC3_ZERO’
+  v1 = Vec3::VEC3_ZERO;
+             ^
+../vec3.h:13:29: note: for a function-style cast, remove the redundant ‘::Vec3’
+ #define VEC3_ZERO Vec3(0,0,0)
+                             ^
+../main.cpp:18:13: note: in expansion of macro ‘VEC3_ZERO’
+  v1 = Vec3::VEC3_ZERO;
+             ^
+subdir.mk:21: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+15:22:21 **** Incremental Build of configuration Release for project Classe Vec3 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp:14:1: error: ‘Vec3’ does not name a type
+ Vec3 v1,v2,result;
+ ^
+../main.cpp: In function ‘int main()’:
+../main.cpp:18:2: error: ‘v1’ was not declared in this scope
+  v1 = Vec3::VEC3_ZERO;
+  ^
+../main.cpp:18:7: error: ‘VEC3_ZERO’ is not a member of ‘Vec3’
+  v1 = Vec3::VEC3_ZERO;
+       ^
+subdir.mk:21: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+15:27:43 **** Incremental Build of configuration Release for project Classe Vec3 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:11:0:
+../vec3.h:20:15: error: ‘Vec3’ does not name a type
+  static const Vec3 VEC3_ZERO; //Vetor zero
+               ^
+../vec3.h:21:15: error: ‘Vec3’ does not name a type
+  static const Vec3 VEC3_ONES; //Vetor de "um"s
+               ^
+../vec3.h:22:15: error: ‘Vec3’ does not name a type
+  static const Vec3 VEC3_FORWARD;
+               ^
+../vec3.h:23:15: error: ‘Vec3’ does not name a type
+  static const Vec3 VEC3_BACKWARD;
+               ^
+../vec3.h:24:15: error: ‘Vec3’ does not name a type
+  static const Vec3 VEC3_UPWARD;
+               ^
+../vec3.h:25:15: error: ‘Vec3’ does not name a type
+  static const Vec3 VEC3_DOWNWARD;
+               ^
+../vec3.h:26:15: error: ‘Vec3’ does not name a type
+  static const Vec3 VEC3_LEFT;
+               ^
+../vec3.h:27:15: error: ‘Vec3’ does not name a type
+  static const Vec3 VEC3_RIGHT;
+               ^
+../main.cpp: In function ‘int main()’:
+../main.cpp:18:7: error: ‘VEC3_ZERO’ is not a member of ‘DVector’
+  v1 = DVector::VEC3_ZERO;
+       ^
+make: *** [main.o] Error 1
+subdir.mk:21: recipe for target 'main.o' failed

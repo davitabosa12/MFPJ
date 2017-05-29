@@ -1,0 +1,39 @@
+15:27:43 **** Incremental Build of configuration Release for project Classe Vec3 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:11:0:
+../vec3.h:20:15: error: ‘Vec3’ does not name a type
+  static const Vec3 VEC3_ZERO; //Vetor zero
+               ^
+../vec3.h:21:15: error: ‘Vec3’ does not name a type
+  static const Vec3 VEC3_ONES; //Vetor de "um"s
+               ^
+../vec3.h:22:15: error: ‘Vec3’ does not name a type
+  static const Vec3 VEC3_FORWARD;
+               ^
+../vec3.h:23:15: error: ‘Vec3’ does not name a type
+  static const Vec3 VEC3_BACKWARD;
+               ^
+../vec3.h:24:15: error: ‘Vec3’ does not name a type
+  static const Vec3 VEC3_UPWARD;
+               ^
+../vec3.h:25:15: error: ‘Vec3’ does not name a type
+  static const Vec3 VEC3_DOWNWARD;
+               ^
+../vec3.h:26:15: error: ‘Vec3’ does not name a type
+  static const Vec3 VEC3_LEFT;
+               ^
+../vec3.h:27:15: error: ‘Vec3’ does not name a type
+  static const Vec3 VEC3_RIGHT;
+               ^
+../main.cpp: In function ‘int main()’:
+../main.cpp:18:7: error: ‘VEC3_ZERO’ is not a member of ‘DVector’
+  v1 = DVector::VEC3_ZERO;
+       ^
+make: *** [main.o] Error 1
+subdir.mk:21: recipe for target 'main.o' failed
+
+15:27:44 Build Finished (took 671ms)
+

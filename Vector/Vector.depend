@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1496027705 source:/home/davi/Documentos/UFC/MFPJ/Vector/main.cpp
+	<iostream>
+	"vec3.h"
+	"vec2.h"
+	<cmath>
+
+1496019822 /home/davi/Documentos/UFC/MFPJ/Vector/vec3.h
+	<cmath>
+	<iostream>
+	<string>
+	<sstream>
+
+1496027839 source:/home/davi/Documentos/UFC/MFPJ/Vector/vec3.cpp
+	"vec3.h"
+	"vec3.h"
+
+1496018938 /home/davi/Documentos/UFC/MFPJ/Vector/vec2.h
+	<cmath>
+	<string>
+	<sstream>
+	"vec3.h"
+
+1496019390 source:/home/davi/Documentos/UFC/MFPJ/Vector/vec2.cpp
+	"vec2.h"
+

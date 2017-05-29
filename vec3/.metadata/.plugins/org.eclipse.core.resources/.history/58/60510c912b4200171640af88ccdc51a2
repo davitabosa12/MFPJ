@@ -1,0 +1,78 @@
+/*
+ * vec3.cpp
+ *
+ *  Created on: 26 de mai de 2017
+ *      Author: davi
+ */
+
+#include"vec3.h"
+
+Vec3::Vec3() {
+	this->x = 0;
+	this->y = 0;
+	this->z = 0;
+}
+
+Vec3::Vec3(double x, double y, double z) {
+	this->x = x;
+	this->y = y;
+	this->z = z;
+}
+
+Vec3::Vec3(const Vec3& v) {
+	this->x = v.getX();
+	this->y = v.getY();
+	this->z = v.getZ();
+}
+
+Vec3 Vec3::add(Vec3 v) {
+	return Vec3(this->x + v.getX(),
+				this->y + v.getY(),
+				this->z + v.getZ());
+}
+
+double Vec3::dot(Vec3 v) {
+
+}
+
+Vec3 Vec3::cross(Vec3 v) {
+}
+
+Vec3 Vec3::mult(double s) {
+}
+
+Vec3 Vec3::div(double s) {
+}
+
+double Vec3::magnitude() {
+}
+
+Vec3 Vec3::normalized() {
+}
+
+double Vec3::getX() const {
+	return x;
+}
+
+void Vec3::setX(double x) {
+	this->x = x;
+}
+
+double Vec3::getY() const {
+	return y;
+}
+
+void Vec3::setY(double y) {
+	this->y = y;
+}
+
+double Vec3::getZ() const {
+	return z;
+}
+
+void Vec3::setZ(double z) {
+	this->z = z;
+}
+
+Vec3 Vec3::projection(Vec3 v) {
+}

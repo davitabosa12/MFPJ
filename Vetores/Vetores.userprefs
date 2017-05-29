@@ -1,0 +1,13 @@
+﻿<Properties StartupItem="Vetores/Vetores.cproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Vetores/vec3.cpp">
+    <Files>
+      <File FileName="Vetores/vec3.h" Line="89" Column="1" />
+      <File FileName="Vetores/vec3.cpp" Line="11" Column="43" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

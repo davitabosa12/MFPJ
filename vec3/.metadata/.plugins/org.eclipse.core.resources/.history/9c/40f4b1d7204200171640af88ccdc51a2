@@ -1,0 +1,10 @@
+/*
+ * vec3.cpp
+ *
+ *  Created on: 26 de mai de 2017
+ *      Author: davi
+ */
+
+#include"vec3.h"
+
+
