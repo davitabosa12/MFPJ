@@ -11,7 +11,8 @@ int main()
 {
     Vec3 v1,v2;
     v1 = Vec3(1,0,0);
-    v2 = Vec3(0.9999,0.0001,0);
+    v2 = Vec3(12,1,1);
+    cout << v2.getMagnitude() << endl;
     double ang = Vec3::angleBetween(v1,v2);
 
     cout << to_degrees(ang)<<endl;

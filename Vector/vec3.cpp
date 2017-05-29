@@ -20,14 +20,15 @@ Vec3::Vec3()
     this->x = 0;
 	this->y = 0;
 	this->z = 1;
-	this->mag = 1;
+	this->mag = sqrt(x*x + y*y + z*z);
 }
 
 Vec3::Vec3(double x, double y, double z) {
 	this->x = x;
 	this->y = y;
 	this->z = z;
-	this->mag = sqrt(x*x + y*y + z*z);
+	double temp = sqrt(x*x + y*y + z*z);
+	this->mag = temp;
 
 }
 //Copy constructor
@@ -35,7 +36,7 @@ Vec3::Vec3(const Vec3& v) {
 	this->x = v.getX();
 	this->y = v.getY();
 	this->z = v.getZ();
-	this->mag = v.getMagnitude();
+	this->mag = sqrt(x*x + y*y + z*z);
 }
 
 Vec3::~Vec3()
@@ -83,27 +84,30 @@ Vec3 Vec3::normalized() {
 
  //Retorna o angulo entre v1 e v2
 double Vec3::angleBetween(Vec3 v1, Vec3 v2){
+    Vec3 n1 = v1.normalized();
+    Vec3 n2 = v2.normalized();
     double n_mult = v1.getMagnitude() * v2.getMagnitude();
-    double theta;
-    double cos = v1.dot(v2) / n_mult;
-    Vec3 aux = v1.cross(v2);
-    double sen = (aux / n_mult).getMagnitude();
-    std::cout << sen << std::endl;
-    if(cos != 0)
-        theta = atan(sen/cos);
-    else
-        theta = 0;
-    if(sen >= 0 && cos > 0){
+    double theta,sen;
+    double cos = n1.dot(n2);
+    Vec3 v = n1.cross(n2);
 
-    }else if(sen > 0 && cos <= 0 ){ //segundo quadrante
-        theta += M_PI_2;
-    } else if( sen <= 0 && cos < 0 ){//terceiro quadrante
-        theta += M_PI;
-    } else if ( sen < 0 && cos >= 0) {//quarto quadrante
-        theta += 3 * M_PI_2;
-    }
-    return theta;
+    if(v.getX() != 0 )
+        sen = v.getX();
+    else if(v.getY() != 0)
+        sen = v.getY();
+    else
+        sen = v.getZ();
+
+
+    if(cos == 0)
+        return asin(sen);
+
+    return atan(sen/cos);
 }
+double Vec3::bigAngleBetween(Vec3 v1, Vec3 v2){
+    return 2 * M_PI - angleBetween(v1,v2);
+}
+
 
 double Vec3::getX() const {
 	return x;

@@ -39,7 +39,7 @@ class Vec3
         Vec3 normalized();  //Retorna o vetor normalizado
         Vec3 projection(Vec3 v); //Retorna a projecao deste vetor em V
         static double angleBetween(Vec3 v1, Vec3 v2); //Retorna o angulo entre v1 e v2
-
+        static double bigAngleBetween(Vec3 v1, Vec3 v2); //Retorna o maior angulo entre v1 e v2
         //IO
         std::string to_string();
 
