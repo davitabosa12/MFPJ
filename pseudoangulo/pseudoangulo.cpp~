@@ -1,0 +1,28 @@
+#include "pseudoangulo.h"
+
+double PAngleBetween(Vec2 v1,Vec2 v2){ //pseudoangle between two 2D vectors
+  return abs(PAngle(v1) - PAngle(v2));
+}
+double PAngle(const Vec2 v){ //pseudoangle between this 2D vector and a VEC2_RIGHT
+  if(v = Vec2::VEC_ZERO)
+    return NAN;
+
+  double x = v.getX();
+  double y = v.getY();
+
+if y ≥ 0
+         if x ≥ 0
+             if x ≥ y
+                 return y/x
+         return 2 – x/y
+     if -x ≤ y
+         return 2 + (-x)/y
+     return 4 – y/(-x)
+if x < 0
+     if -x ≥ -y
+         return 4 + (-y)/(-x)
+     return 6 – (-x)/(-y)
+if x ≤ -y
+     return 6 + x/(-y)
+return 8 – (-y)/x 
+       }

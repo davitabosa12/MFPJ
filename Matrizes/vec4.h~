@@ -1,0 +1,8 @@
+#pragma once
+class Vec4{
+ public:
+  Vec4();
+  Vec4(double,double,double,double);
+ private:
+  double x,y,z,w;
+}

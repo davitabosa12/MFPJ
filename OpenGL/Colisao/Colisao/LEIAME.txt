@@ -1,0 +1,3 @@
+Instruções:
+Passe o mouse sobre as figuras. Quando há colisao, as figuras mudarao de cor.
+Clique para mudar de forma (Circulo e AABB).

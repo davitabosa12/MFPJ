@@ -1,0 +1,15 @@
+#include "mat4.h"
+#include "vec4.h"
+using namespace std;
+int main(){
+  Mat4 teste = Mat4();
+  Mat4 id = Mat4();
+  
+  for(int i = 0; i < 16; i++)
+    teste.set(i,i + 1);
+  id.identity();
+  teste.toString();
+  teste.rotateX(M_PI / 4);
+  teste.toString();
+  return 0;
+}

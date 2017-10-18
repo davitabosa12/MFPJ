@@ -1,0 +1,33 @@
+#include "vec3.h"
+#pragma once
+class Mat4{
+  //Construtor
+ public:
+  Mat4();
+  ~Mat4();
+  //Multiplicacao
+  Mat4 mult(Mat4);
+  Mat4 mult(Vec3);
+  //identidade
+  void identity();
+  //translacao
+  void translate(float,float,float);
+  //escala
+  void scale(float);
+  void scale(float,float,float);
+  //rotacao
+  void rotateX(float);
+  void rotateY(float);
+  void rotateZ(float);
+  void rotate(Vec3,float);
+  //trs
+  void trs(Vec3, Mat4, Vec3);
+  //srt
+  void srt(Vec3, Mat4, Vec3);
+  //getter&setter
+  float get(int,int);
+  void  set(int,int,float);
+  
+ private:
+  float matrix4[4][4];  
+}

@@ -1,0 +1,48 @@
+# depslib dependency file v1.0
+1499905662 source:/home/davi/Documentos/UFC/MFPJ/OpenGL/Colisao/Colisao/aabb.cpp
+	"aabb.h"
+	<iostream>
+
+1499905191 /home/davi/Documentos/UFC/MFPJ/OpenGL/Colisao/Colisao/aabb.h
+	"shapes.h"
+	"circle.h"
+
+1499622695 /home/davi/Documentos/UFC/MFPJ/OpenGL/Colisao/Colisao/shapes.h
+	<vector>
+	"vec2.h"
+
+1499884606 /home/davi/Documentos/UFC/MFPJ/OpenGL/Colisao/Colisao/vec2.h
+
+1499905158 /home/davi/Documentos/UFC/MFPJ/OpenGL/Colisao/Colisao/circle.h
+	"shapes.h"
+	"aabb.h"
+	"obb.h"
+
+1499905681 source:/home/davi/Documentos/UFC/MFPJ/OpenGL/Colisao/Colisao/circle.cpp
+	"circle.h"
+	<iostream>
+	<cmath>
+
+1499905718 source:/home/davi/Documentos/UFC/MFPJ/OpenGL/Colisao/Colisao/main.cpp
+	<iostream>
+	"aabb.h"
+	<cmath>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+
+1499903666 source:/home/davi/Documentos/UFC/MFPJ/OpenGL/Colisao/Colisao/obb.cpp
+	"obb.h"
+	<iostream>
+	<cmath>
+
+1499883459 /home/davi/Documentos/UFC/MFPJ/OpenGL/Colisao/Colisao/obb.h
+	"shapes.h"
+	"circle.h"
+	"aabb.h"
+
+1499884591 source:/home/davi/Documentos/UFC/MFPJ/OpenGL/Colisao/Colisao/vec2.cpp
+	"vec2.h"
+	<cmath>
+	<iostream>
+

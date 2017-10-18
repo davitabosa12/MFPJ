@@ -1,0 +1,4 @@
+#include "vec4.h"
+  Vec4();
+  Vec4(double x,double y ,double z, double w);
+  double x,y,z,w;

@@ -1,0 +1,17 @@
+#include<iostream>
+#include"vec2.h"
+#include"pseudoangulo.h"
+void imprime(Vec2 v1, Vec2 v2);
+int main(){
+  Vec2 v1 = Vec2(1,0);
+  Vec2 v2 = Vec2(0,-1);
+  imprime(v1,v2);
+}
+
+void imprime(Vec2 v1, Vec2 v2){
+  double result = PAngleBetween(v1,v2);
+  double x1 = v1.getX(), y1 = v1.getY();
+  double x2 = v2.getX(), y2 = v2.getY();
+  std::cout << "(" << x1 << "," << y1 << "):";
+  std::cout << "(" << x2 << "," << y2 << ")" << " "<< result << std::endl;
+}
